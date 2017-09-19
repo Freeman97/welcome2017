@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0, user-scalable = 0">
+	<meta charset = "UTF-8">
+	<title>百步梯技术部2017秋招</title>
+	<link rel="stylesheet" href="swiper.min.css">
+	<link rel="stylesheet" href="animate.min.css">
+	<style>
+		html, body{
+			position: relative;
+			height: 100%;
+		}
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		#soundSvg
+		{
+			z-index: 1;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-ms-flex-pack: distribute;
+			justify-content: space-around;
+			-ms-flex-line-pack: distribute;
+			align-content: space-around;
+			box-sizing: border-box;
+		}
+		.swiper-container
+		{
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-slide
+		{
+			text-align: center;
+			font-size: 18px;
+			background: #4caf50;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+			z-index: -2;
+		}
+		.swiper-pagination-bullet-active
+		{
+			background: #666666;
+		}
+		#slide0
+		{
+			background-color: #ffffff;
+			background-image: url("Image/background1.png");
+			background-repeat: no-repeat;
+			background-position: right;
+		}
+		.text1, .text2, .text3, .text4, .text5, .text6, .text7
+		{
+			display: block;
+			position: absolute;
+			text-align: center;
+			font-family: 等线;
+			font-size: 25px;
+			color: #ffffff;
+		}
+		.dot
+		{
+			top: 24%;
+			color: #ffffff;
+			font-size: 40px;
+		}
+		#text10, #text20, #text30, #text40, #text50, #text60, #text70
+		{
+			top: 10%;
+		}
+		#text11, #text21, #text31, #text41, #text51, #text61, #text71
+		{
+			top: 17%;
+		}
+		#text12, #text22, #text32, #text42, #text52, #text62
+		{
+			top: 24%;
+		}
+		#text13, #text23, #text33
+		{
+			top: 31%;
+		}
+		#text14, #text24, #text34, #text63
+		{
+			top: 38%;
+		}
+		#text15, #text64
+		{
+			top: 45%;
+		}
+		#school
+		{
+			position: absolute;
+			top: 65%;
+		}
+		#mark
+		{
+			position: absolute;
+			top: 65%;
+		}
+		#bobantang
+		{
+			position: absolute;
+			top: 67%;
+		}
+		#programming
+		{
+			width: 280px;
+			height: 196px;
+			position: absolute;
+			top: 50%;
+		}
+		#text60
+		{
+			font-weight: bold;
+		}
+		#logo
+		{
+			position: absolute;
+			top: 55%;
+		}
+		#crossed
+		{
+			position: absolute;
+			top: 31%;
+			text-align: center;
+			font-family: 等线;
+			font-size: 25px;
+			color: #666666;
+		}
+		#QRcode
+		{
+			position: absolute;
+			top: 30%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" id="slide0">
+				<svg id="soundSvg" width="200" height="200">
+					<circle id="soundButton" cx="100" cy="100" r="70" style="fill:#66A04C">
+						<animate id="animate1" attributeType="auto" attributeName="r" values="70;75;70" begin="0s" dur="1.5s" repeatCount="indefinite">
+						</animate>
+						<animate id="animate2" attributeName="fill-opacity" attributeType="CSS" values="1;0.8;1" begin="0s" dur="1.5s" repeatCount="indefinite">
+						</animate>
+						<animate id="animate3" attributeName="color">
+						</animate>
+					</circle>
+					<text id="soundStatus" x="100" y="100" style="fill:#ffffff" text-anchor="middle">Sound on</text>
+				</svg>
+			</div>
+			<div class="swiper-slide" id="slide1">
+				<p class="ani text1" id="text10" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.3s">2017级的同学</p>
+				<p class="ani text1" id="text11" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.9s">你说你要来</p>
+				<p class="ani text1" id="text12" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.5s">我们心中</p>
+				<p class="ani text1" id="text13" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="2.1s">便一直怀着期待</p>
+				<p class="ani text1" id="text14" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="2.7s">欢迎来到华工！</p>
+				<p class="ani text1" id="text15" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="3.7s">:D</p>
+				<img src="Image/school.png" class="ani" id="school" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="4.2s"/>
+			</div>
+			<div class="swiper-slide" id="slide2">
+				<p class="ani text2" id="text20" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.3s">在华工百步梯</p>
+				<p class="ani text2" id="text21" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.9s">一群热爱技术的人</p>
+				<p class="ani text2" id="text22" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s">聚集在了一起</p>
+				<p class="ani text2" id="text23" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2.1s">组成了高端大气上档次的</p>
+				<p class="ani text2" id="text24" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3.1s">技术部</p>
+				<svg version="1.1" id="mark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+					<g>
+						<path d="M96.667,48.582L72.548,24.463c-0.75-0.75-2.078-0.75-2.828,0l-5.229,5.229c-0.781,0.781-0.781,2.047,0,2.828l17.476,17.475
+							L64.493,67.472c-0.781,0.781-0.781,2.047,0,2.828l5.228,5.229c0.375,0.375,0.884,0.586,1.414,0.586s1.039-0.211,1.414-0.586
+							L96.667,51.41C97.448,50.629,97.448,49.363,96.667,48.582z"/>
+						<path d="M35.508,67.472L18.033,49.996L35.51,32.521c0.375-0.375,0.586-0.883,0.586-1.414c0-0.53-0.21-1.039-0.586-1.414
+							l-5.229-5.229c-0.375-0.375-0.884-0.586-1.414-0.586s-1.039,0.211-1.414,0.586L3.334,48.582c-0.781,0.781-0.781,2.047,0,2.828
+							l24.118,24.119c0.375,0.375,0.884,0.586,1.414,0.586s1.039-0.211,1.414-0.586l5.229-5.229C36.29,69.52,36.29,68.253,35.508,67.472z
+							"/>
+						<path d="M63.715,16.348c-0.253-0.466-0.682-0.812-1.19-0.962l-4.239-1.251c-1.058-0.314-2.172,0.293-2.484,1.352L36.123,82.13
+							c-0.15,0.509-0.092,1.056,0.161,1.522c0.253,0.466,0.682,0.812,1.19,0.962l4.239,1.251c0.189,0.056,0.38,0.083,0.567,0.083
+							c0.863,0,1.66-0.564,1.917-1.434L63.876,17.87C64.027,17.361,63.969,16.814,63.715,16.348z"/>
+					</g>
+				</svg>
+			</div>
+			<div class="swiper-slide" id="slide3">
+				<p class="ani text3" id="text30" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.7s">波板糖APP</p>
+				<p class="ani text3" id="text31" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.7s">治愈系</p>
+				<p class="ani text3" id="text32" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2.7s">对校园生活的各种美好想象</p>
+				<p class="ani text3" id="text33" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3.3s">由我们百步梯技术部</p>
+				<p class="ani text3" id="text34" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3.9s">用一行行代码提供支持</p>
+				<img src="Image/bt1.png" class="ani" id="bobantang" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.7s"/>
+			</div>
+			<div class="swiper-slide" id="slide4">
+				<p class="ani text4" id="text40" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1s">我们享受</p>
+				<p class="ani text4" id="text41" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="2s">指尖在键盘上舞动</p>
+				<p class="ani text4" id="text42" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3s">用代码创造无限可能的感觉</p>
+				<img src="Image/programming.jpg" class="ani" id="programming" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s"/>
+			</div>
+			<div class="swiper-slide" id="slide5">
+				<p class="ani text5" id="text50" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.7s">如果</p>
+				<p class="ani text5" id="text51" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.7s">你对我们热爱的东西感兴趣</p>
+				<p class="ani text5" id="text52" swiper-animate-effect="fadeInDown" swiper-animate-dutation="1s" swiper-animate-delay="2.7s">想与我们一同交流学习</p>
+				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="3.0s">.</p>
+				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="3.3s">.</p>
+				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="3.6s">.</p>
+				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="3.9s">.</p>
+				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="4.2s">.</p>
+				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="4.5s">.</p>
+			</div>
+			<div class="swiper-slide" id="slide6">
+				<p class="ani text6" id="text60" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.0s">加入百步梯技术部</p>
+				<p class="ani text6" id="text61" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.3s">为你的大学</p>
+				<p class="ani text6" id="text62" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.6s">增添一抹</p>
+				<p class="ani" id="crossed" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.6s"><del>原谅绿</del></p>
+				<p class="ani text6" id="text63" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.9s">百步梯绿</p>
+				<p class="ani text6" id="text64" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="2.1s">CLICK ↓ HERE</p>
+				<img src="Image/logo.png" id="logo" class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.0s" onclick="window.location='https://www.wjx.top/m/16563345.aspx'"/>
+			</div>
+			<div class="swiper-slide" id="slide7">
+				<p class="ani text7" id="text70" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1s">加入2017技术部秋招群</p>
+				<p class="ani text7" id="text71" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="2s">获取秋招第一手资料</p>
+				<img src="Image/QRcode.jpg" width="280px" height="300px" class="ani" id="QRcode" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.5s"/>
+			</div>
+		</div>
+		<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+			<span class="swiper-pagination-bullet"></span>
+			<span class="swiper-pagination-bullet"></span>
+			<span class="swiper-pagination-bullet"></span>
+		</div>
+		<!--div class="swiper-button-prev"></div-->
+		<!--div class="swiper-button-next"></div-->
+	</div>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+	<script src="swiper.min.js"></script>
+	<script src="swiper.animate1.0.2.min.js"></script>
+	<script>
+		var ifSoundOn = true;
+		var sound = document.createElement("audio");
+		sound.src = "Sound/As the Stars Fall - The Road.mp3";
+		sound.play();
+		var mySwiper = new Swiper('.swiper-container',
+		{
+            onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+                swiperAnimateCache(swiper); //隐藏动画元素
+                swiperAnimate(swiper); //初始化完成开始动画
+            },
+            onSlideChangeEnd: function(swiper){
+                swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            },
+            direction: 'vertical',
+			loop: false,
+			pagination: '.swiper-pagination',
+        	paginationClickable: true,
+        	direction: 'vertical',
+        	mousewheelControl: true,
+			watchSlidesProgress: true,
+			watchSlidesVisibility: true,
+			});
+        	$('#soundSvg').bind('click', function(event)
+			{
+        	    if(ifSoundOn)
+				{
+				    soundOff();
+				}
+				else
+				{
+				    soundOn();
+				}
+        	});
+        	function soundOn()
+			{
+				sound.play();
+				ifSoundOn = true;
+        	    $('#soundButton').attr('style', 'fill:#66A04C');
+				$('#soundStatus').html("Sound on");
+                document.getElementById('soundSvg').unpauseAnimations();
+			}
+			function soundOff()
+			{
+				sound.pause();
+				ifSoundOn = false;
+        	    $('#soundButton').attr('style', 'fill:#666666');
+        	    $('#soundStatus').html("Sound off");
+        	    document.getElementById('soundSvg').pauseAnimations();
+        	}
+	</script>
+</body>
+</html>
