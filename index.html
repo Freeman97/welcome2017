@@ -18,17 +18,12 @@
 
 		#soundSvg
 		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
 			z-index: 1;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-			-ms-flex-pack: distribute;
-			justify-content: space-around;
-			-ms-flex-line-pack: distribute;
-			align-content: space-around;
-			box-sizing: border-box;
 		}
 		.swiper-container
 		{
@@ -42,18 +37,7 @@
 			text-align: center;
 			font-size: 18px;
 			background: #4caf50;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
-			display: flex;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
-			-webkit-justify-content: center;
-			justify-content: center;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			-webkit-align-items: center;
-			align-items: center;
+
 			z-index: -2;
 		}
 		.swiper-pagination-bullet-active
@@ -74,31 +58,25 @@
 			-webkit-margin-start: 0;
 			-webkit-margin-end: 0;
 			display: block;
-			position: absolute;
+			position: relative;
 			text-align: center;
 			font-family: 等线;
 			font-size: 25px;
 			color: #ffffff;
-			display: -webkit-box;
-			display: -moz-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
-			display: flex;
-			-webkit-box-align: center;
-			-moz-box-align: center;
-			-ms-flex-align: center;
-			-webkit-align-items: center;
-			align-items: center;
+		}
+		#dot
+		{
+			position:absolute;
+			top: 35%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
+			color: #ffffff;
+			font-size: 40px;
 		}
 		.dot
 		{
-			-webkit-margin-before: 0;
-			-webkit-margin-after: 0;
-			-webkit-margin-start: 0;
-			-webkit-margin-end: 0;
-			top: 24%;
-			color: #ffffff;
-			font-size: 40px;
+			display: inline-block;
 		}
 		#text10, #text20, #text30, #text40, #text50, #text60, #text70
 		{
@@ -106,38 +84,48 @@
 		}
 		#text11, #text21, #text31, #text41, #text51, #text61, #text71
 		{
-			top: 17%;
+			top: 15%;
 		}
 		#text12, #text22, #text32, #text42, #text52, #text62
 		{
-			top: 24%;
+			top: 20%;
 		}
 		#text13, #text23, #text33
 		{
-			top: 31%;
+			top: 25%;
 		}
 		#text14, #text24, #text34, #text63
 		{
-			top: 38%;
+			top: 30%;
 		}
 		#text15, #text64
 		{
-			top: 45%;
+			top: 35%;
 		}
 		#school
 		{
+			display: block;
 			position: absolute;
-			top: 65%;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
 		}
 		#mark
 		{
 			position: absolute;
 			top: 65%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
 		}
 		#bobantang
 		{
 			position: absolute;
 			top: 67%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
 		}
 		#programming
 		{
@@ -145,6 +133,9 @@
 			height: 196px;
 			position: absolute;
 			top: 50%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
 		}
 		#text60
 		{
@@ -152,8 +143,12 @@
 		}
 		#logo
 		{
+			display: inline-block;
 			position: absolute;
-			top: 55%;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
 		}
 		#crossed
 		{
@@ -162,16 +157,22 @@
 			-webkit-margin-start: 0;
 			-webkit-margin-end: 0;
 			position: absolute;
-			top: 31%;
+			top: 35%;
+			left: 50%;
 			text-align: center;
 			font-family: 等线;
 			font-size: 20px;
 			color: #666666;
+			transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
 		}
 		#QRcode
 		{
 			position: absolute;
-			top: 30%;
+			top: 35%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
 		}
 	</style>
 </head>
@@ -240,12 +241,14 @@
 				<p class="ani text5" id="text50" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.7s">如果</p>
 				<p class="ani text5" id="text51" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.7s">你对我们热爱的东西感兴趣</p>
 				<p class="ani text5" id="text52" swiper-animate-effect="fadeInDown" swiper-animate-dutation="1s" swiper-animate-delay="2.7s">想与我们一同交流学习</p>
+				<div id="dot">
 				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="3.0s">.</p>
 				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="3.3s">.</p>
 				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="3.6s">.</p>
 				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="3.9s">.</p>
 				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="4.2s">.</p>
 				<p class="ani dot" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="4.5s">.</p>
+				</div>
 			</div>
 			<div class="swiper-slide" id="slide6">
 				<p class="ani text6" id="text60" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.0s">加入百步梯技术部</p>
@@ -254,7 +257,7 @@
 				<p class="ani" id="crossed" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.6s"><del>原谅绿</del></p>
 				<p class="ani text6" id="text63" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.9s">百步梯绿</p>
 				<p class="ani text6" id="text64" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="2.1s">CLICK ↓ HERE</p>
-				<img src="Image/logo.png" id="logo" class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.0s" onclick="window.location='https://www.wjx.top/m/16563345.aspx'"/>
+				<img src="Image/logo.png" onclick="window.location='https://www.wjx.top/m/16563345.aspx'" id="logo" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.0s"/>
 			</div>
 			<div class="swiper-slide" id="slide7">
 				<p class="ani text7" id="text70" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1s">加入2017技术部秋招群</p>
