@@ -15,6 +15,7 @@
 			margin: 0;
 			padding: 0;
 		}
+
 		#soundSvg
 		{
 			z-index: 1;
@@ -36,6 +37,8 @@
 		}
 		.swiper-slide
 		{
+			width: 100%;
+			height: 100%;
 			text-align: center;
 			font-size: 18px;
 			background: #4caf50;
@@ -66,15 +69,33 @@
 		}
 		.text1, .text2, .text3, .text4, .text5, .text6, .text7
 		{
+			-webkit-margin-before: 0;
+			-webkit-margin-after: 0;
+			-webkit-margin-start: 0;
+			-webkit-margin-end: 0;
 			display: block;
 			position: absolute;
 			text-align: center;
 			font-family: 等线;
 			font-size: 25px;
 			color: #ffffff;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-align: center;
+			-moz-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
 		}
 		.dot
 		{
+			-webkit-margin-before: 0;
+			-webkit-margin-after: 0;
+			-webkit-margin-start: 0;
+			-webkit-margin-end: 0;
 			top: 24%;
 			color: #ffffff;
 			font-size: 40px;
@@ -136,11 +157,15 @@
 		}
 		#crossed
 		{
+			-webkit-margin-before: 0;
+			-webkit-margin-after: 0;
+			-webkit-margin-start: 0;
+			-webkit-margin-end: 0;
 			position: absolute;
 			top: 31%;
 			text-align: center;
 			font-family: 等线;
-			font-size: 25px;
+			font-size: 20px;
 			color: #666666;
 		}
 		#QRcode
@@ -245,7 +270,7 @@
 		<!--div class="swiper-button-prev"></div-->
 		<!--div class="swiper-button-next"></div-->
 	</div>
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
 	<script src="swiper.min.js"></script>
 	<script src="swiper.animate1.0.2.min.js"></script>
 	<script>
